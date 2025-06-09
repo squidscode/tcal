@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "T-Cal",
+  "description": "Highlights all dates on the page and allows users to click on a date and create a calendar link to the date.",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [{
+      "js": ["scripts/content.js"],
+      "matches": [ "<all_urls>" ]
+    }]
+}
